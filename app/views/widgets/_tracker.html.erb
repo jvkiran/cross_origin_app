@@ -1,0 +1,18 @@
+<div>
+    <%= form_with url: widget_tracker_url, method: :post do |form| %>
+        <%= form.label :name, 'Enter Name:' %>
+        <%= form.text_field :name %>
+        <br />
+        <%= form.label :mobile, 'Enter Mobile Number:' %>
+        <%= form.text_field :mobile %>
+        <br />
+        <%= form.label :message, 'Enter Message:' %>
+        <%= form.text_field :message %>
+        <br />
+        <%= form.submit 'Send' %>
+    <% end %>
+</div>
+
+<script type='text/javascript'>
+    alert('hello, im in tracker page');
+</script>
